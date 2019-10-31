@@ -1,5 +1,5 @@
 const express = require('express');
-const exp = require('express-handlebars');
+const exphbs = require('express-handlebars');
 const path = require('path');
 const mo = require('method-override');
 const expressSession = require('express-session');
@@ -10,15 +10,23 @@ require('./database/dbMongo');
 require('./database/dbRedis');
 
 //Settings
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+    res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
+    next();
+});
 app.set('port,process.env.port|| 3000');
 app.set('views', path.join(__dirname, 'views'));
-app.engine('.hbs', exp({
+app.engine('.hbs', exphbs({
     defaultLayout: 'main',
     layoutsDir: path.join(app.get('views'), 'layouts'),
     partials: path.join(app.get('views'), 'partials'),
     extname: '.hbs'
 }));
 app.set('view engine', '.hbs');
+
 
 //middleware
 app.use(express.urlencoded({extend: false}));

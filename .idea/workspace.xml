@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/views/users/singin.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/users/singup.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/dbMongo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/dbMongo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/layouts/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/layouts/main.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/about.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/about.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +42,9 @@
   <component name="RecentsManager">
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/CesarDuvanCabraCoy/Red-Social-backend.git" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -73,7 +82,7 @@
       <workItem from="1572445603356" duration="1547000" />
       <workItem from="1572448732284" duration="585000" />
       <workItem from="1572479789303" duration="522000" />
-      <workItem from="1572480432222" duration="4784000" />
+      <workItem from="1572480432222" duration="10320000" />
     </task>
     <task id="LOCAL-00001" summary="I like sme oenis">
       <created>1572446469562</created>
@@ -110,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572485017876</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="conexion de Mongo y Redis">
+      <created>1572485267349</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572485267349</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +151,7 @@
     <MESSAGE value="nueva modificacion" />
     <MESSAGE value="Creacion del servidor" />
     <MESSAGE value="Configuracion de la conexion de Mongo y Redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuracion de la conexion de Mongo y Redis" />
+    <MESSAGE value="conexion de Mongo y Redis" />
+    <option name="LAST_COMMIT_MESSAGE" value="conexion de Mongo y Redis" />
   </component>
 </project>
