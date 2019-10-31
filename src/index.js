@@ -1,9 +1,13 @@
 const express = require('express');
-const app = express();
 const exp = require('express-handlebars');
 const path = require('path');
 const mo = require('method-override');
 const expressSession = require('express-session');
+
+//inicilizacion
+const app = express();
+//require('./database/dbMongo');
+require('./database/dbRedis');
 
 //Settings
 app.set('port,process.env.port|| 3000');
