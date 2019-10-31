@@ -4,7 +4,6 @@
     <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/dbMongo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/dbMongo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/dbRedis.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/dbRedis.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,7 +73,7 @@
       <workItem from="1572445603356" duration="1547000" />
       <workItem from="1572448732284" duration="585000" />
       <workItem from="1572479789303" duration="522000" />
-      <workItem from="1572480432222" duration="4400000" />
+      <workItem from="1572480432222" duration="4784000" />
     </task>
     <task id="LOCAL-00001" summary="I like sme oenis">
       <created>1572446469562</created>
@@ -104,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572484116531</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Configuracion de la conexion de Mongo y Redis">
+      <created>1572485017876</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572485017876</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +134,7 @@
     <MESSAGE value="I like sme oenis" />
     <MESSAGE value="nueva modificacion" />
     <MESSAGE value="Creacion del servidor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion del servidor" />
+    <MESSAGE value="Configuracion de la conexion de Mongo y Redis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuracion de la conexion de Mongo y Redis" />
   </component>
 </project>

@@ -6,7 +6,7 @@ const expressSession = require('express-session');
 
 //inicilizacion
 const app = express();
-//require('./database/dbMongo');
+require('./database/dbMongo');
 require('./database/dbRedis');
 
 //Settings

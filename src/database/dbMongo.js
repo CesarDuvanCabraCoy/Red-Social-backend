@@ -7,5 +7,5 @@ mongoose
             useNewUrlParser: true
         }
     )
-    .then(db => console.log('Db is connected'))
+    .then(db => console.log('Db Connected Mongo'))
     .catch(err => console.log(err));
