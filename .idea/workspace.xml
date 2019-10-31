@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/movie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/layouts/main.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/partials/about.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/partials/index.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/dbMongo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/dbMongo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,13 +29,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1SvYakGRmbl0l8or20rfejfWgzl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="OPEN_URL_DIALOG">
@@ -70,7 +79,7 @@
       <workItem from="1572445603356" duration="1547000" />
       <workItem from="1572448732284" duration="585000" />
       <workItem from="1572479789303" duration="522000" />
-      <workItem from="1572480432222" duration="977000" />
+      <workItem from="1572480432222" duration="3630000" />
     </task>
     <task id="LOCAL-00001" summary="I like sme oenis">
       <created>1572446469562</created>
@@ -86,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572446800574</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Creacion del servidor">
+      <created>1572481621479</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572481621479</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +125,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="I like sme oenis" />
     <MESSAGE value="nueva modificacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="nueva modificacion" />
+    <MESSAGE value="Creacion del servidor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion del servidor" />
   </component>
 </project>
