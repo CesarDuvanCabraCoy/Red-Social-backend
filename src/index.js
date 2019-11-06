@@ -3,6 +3,8 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 const mo = require('method-override');
 const expressSession = require('express-session');
+const flash = require('connect-flash');
+const morgan = require('morgan');
 
 //inicilizacion
 const app = express();
@@ -36,8 +38,16 @@ app.use(expressSession({
     resave:true,
     saveUninitialized:true
 }));
+app.use(flash());
+app.use(morgan('dev'));
 //Global Variables
-
+app.use((req, res, next) => {
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.error_msg = req.flash('error_msg');
+    res.locals.error = req.flash('error');
+    res.locals.user = req.user || null;
+    next();
+});
 //routes
 app.use(require('./routes/index'));
 app.use(require('./routes/movie'));
