@@ -41,7 +41,7 @@ app.use(expressSession({
 //routes
 app.use(require('./routes/index'));
 app.use(require('./routes/movie'));
-app.use(require('./routes/user'));
+app.use(require('./routes/users'));
 //static files
 
 

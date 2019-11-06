@@ -2,21 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/users/singin.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/users/singup.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/partials/errors.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/partials/messages.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/partials/navigation.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/users/signin.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/layouts/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/layouts/main.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/partials/about.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/about.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/partials/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/users/singin.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/users/singup.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/users/signup.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Node-ProyectoElectiva" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +49,7 @@
       <recent name="https://github.com/CesarDuvanCabraCoy/Red-Social-backend.git" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views" />
     </key>
   </component>
@@ -82,7 +88,9 @@
       <workItem from="1572445603356" duration="1547000" />
       <workItem from="1572448732284" duration="585000" />
       <workItem from="1572479789303" duration="522000" />
-      <workItem from="1572480432222" duration="10320000" />
+      <workItem from="1572480432222" duration="10380000" />
+      <workItem from="1572976745056" duration="352000" />
+      <workItem from="1572997553982" duration="5505000" />
     </task>
     <task id="LOCAL-00001" summary="I like sme oenis">
       <created>1572446469562</created>
@@ -126,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572485267349</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Renderizado en nodejs">
+      <created>1572491104968</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572491104968</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +167,7 @@
     <MESSAGE value="Creacion del servidor" />
     <MESSAGE value="Configuracion de la conexion de Mongo y Redis" />
     <MESSAGE value="conexion de Mongo y Redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="conexion de Mongo y Redis" />
+    <MESSAGE value="Renderizado en nodejs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renderizado en nodejs" />
   </component>
 </project>
