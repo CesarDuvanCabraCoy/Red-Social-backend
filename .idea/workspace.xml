@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="" />
+    <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/views/users/signin.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/users/signin.hbs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Node-ProyectoElectiva" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -19,22 +24,23 @@
     </option>
   </component>
   <component name="ProjectId" id="1SvYakGRmbl0l8or20rfejfWgzl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/CesarDuvanCabraCoy/Red-Social-backend.git" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -49,6 +55,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/index.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -59,8 +75,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572445601957</updated>
-      <workItem from="1572445603356" duration="853000" />
-      <workItem from="1572447094323" duration="380000" />
+      <workItem from="1572445603356" duration="1547000" />
+      <workItem from="1572448732284" duration="585000" />
+      <workItem from="1572479789303" duration="522000" />
+      <workItem from="1572480432222" duration="10380000" />
+      <workItem from="1572976745056" duration="352000" />
+      <workItem from="1572997553982" duration="5652000" />
     </task>
     <task id="LOCAL-00001" summary="I like sme oenis">
       <created>1572446469562</created>
@@ -69,7 +89,63 @@
       <option name="project" value="LOCAL" />
       <updated>1572446469562</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="nueva modificacion">
+      <created>1572446800574</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572446800574</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Creacion del servidor">
+      <created>1572481621479</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572481621479</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Creacion del servidor">
+      <created>1572484116531</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572484116531</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Configuracion de la conexion de Mongo y Redis">
+      <created>1572485017876</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572485017876</updated>
+    </task>
+    <task id="LOCAL-00006" summary="conexion de Mongo y Redis">
+      <created>1572485267349</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572485267349</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Renderizado en nodejs">
+      <created>1572491104968</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572491104968</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Renderizado en nodejs">
+      <created>1573007773347</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1573007773347</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Cambios en la vista login  en nodejs">
+      <created>1573007837273</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573007837273</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,7 +165,14 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="I like sme oenis" />
-    <option name="LAST_COMMIT_MESSAGE" value="I like sme oenis" />
+    <MESSAGE value="nueva modificacion" />
+    <MESSAGE value="Creacion del servidor" />
+    <MESSAGE value="Configuracion de la conexion de Mongo y Redis" />
+    <MESSAGE value="conexion de Mongo y Redis" />
+    <MESSAGE value="Renderizado en nodejs" />
+    <MESSAGE value="Cambios en la vista login  en nodejs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios en la vista login  en nodejs" />
   </component>
 </project>
