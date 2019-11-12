@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Lenovo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/img/film.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/users/film.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/dbCassandra.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/dbCassandra.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/dbRedis.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/dbRedis.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/layouts/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/layouts/main.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/users/signin.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/users/signin.hbs" afterDir="false" />
     </list>
@@ -99,7 +95,7 @@
       <workItem from="1573046752921" duration="2486000" />
       <workItem from="1573150313440" duration="3537000" />
       <workItem from="1573425947580" duration="11612000" />
-      <workItem from="1573519054349" duration="5075000" />
+      <workItem from="1573519054349" duration="6867000" />
     </task>
     <task id="LOCAL-00001" summary="I like sme oenis">
       <created>1572446469562</created>
@@ -185,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573426967800</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Configuracion de conexion Cassandra 2">
+      <created>1573524435003</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573524435003</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +218,7 @@
     <MESSAGE value="Cambios en la vista login  en nodejs" />
     <MESSAGE value="Creacion y almacenamiento de usuarios" />
     <MESSAGE value="Configuracion de conexion Cassandra" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuracion de conexion Cassandra" />
+    <MESSAGE value="Configuracion de conexion Cassandra 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuracion de conexion Cassandra 2" />
   </component>
 </project>

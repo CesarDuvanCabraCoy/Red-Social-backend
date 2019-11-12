@@ -32,6 +32,7 @@ app.set('view engine', '.hbs');
 
 
 //middleware
+app.set( path.join(__dirname, '/public'));
 app.use(express.urlencoded({extend: false}));
 app.use(mo('_method'));
 app.use(expressSession({
