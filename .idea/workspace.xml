@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/database/dbCassandra.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Lenovo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/img/film.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/dbCassandra.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/dbCassandra.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/dbRedis.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/dbRedis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/layouts/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/layouts/main.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/users/signin.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/users/signin.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
@@ -41,7 +47,13 @@
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/CesarDuvanCabraCoy/Red-Social-backend.git" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public" />
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views" />
     </key>
@@ -86,7 +98,8 @@
       <workItem from="1572997553982" duration="7590000" />
       <workItem from="1573046752921" duration="2486000" />
       <workItem from="1573150313440" duration="3537000" />
-      <workItem from="1573425947580" duration="965000" />
+      <workItem from="1573425947580" duration="11612000" />
+      <workItem from="1573519054349" duration="5075000" />
     </task>
     <task id="LOCAL-00001" summary="I like sme oenis">
       <created>1572446469562</created>
@@ -165,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573047253417</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Configuracion de conexion Cassandra">
+      <created>1573426967800</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1573426967800</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +214,7 @@
     <MESSAGE value="Renderizado en nodejs" />
     <MESSAGE value="Cambios en la vista login  en nodejs" />
     <MESSAGE value="Creacion y almacenamiento de usuarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion y almacenamiento de usuarios" />
+    <MESSAGE value="Configuracion de conexion Cassandra" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuracion de conexion Cassandra" />
   </component>
 </project>

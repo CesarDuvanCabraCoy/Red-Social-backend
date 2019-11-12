@@ -1,14 +1,13 @@
 const cassandra = require('cassandra-driver');
-
-const clientOptions = {
-    contactPoints: ["host1", "host2"],
-    keyspace: "test"
-};
-const client = new cassandra.Client(clientOptions);
-const query = "SELECT hello FROM world WHERE name = ?";
-client.execute(query, ["John"], (err, results) => {
-    if (err) {
-        return console.error(err);
-    }
-    console.log(results.rows);
+const clientCass = new cassandra.Client({
+    contactPoints: ['127.0.0.1'],
+    localDataCenter: 'datacenter1',
+    keyspace: "table1"
 });
+
+clientCass.connect(function (err, result) {
+    console.log('DB Connected Cassandra');
+});
+
+module.exports = clientCass;
+/**/

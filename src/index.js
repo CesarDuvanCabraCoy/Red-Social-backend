@@ -10,6 +10,7 @@ const morgan = require('morgan');
 const app = express();
 require('./database/dbMongo');
 require('./database/dbRedis');
+require('./database/dbCassandra');
 
 //Settings
 app.use((req, res, next) => {
