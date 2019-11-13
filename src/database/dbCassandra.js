@@ -9,5 +9,6 @@ clientCass.connect(function (err, result) {
     console.log('DB Connected Cassandra');
 });
 
+
 module.exports = clientCass;
 /**/

@@ -3,7 +3,9 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 const mo = require('method-override');
 const expressSession = require('express-session');
+const session = require('express-session');
 const flash = require('connect-flash');
+const passport = require('passport');
 const morgan = require('morgan');
 
 //inicilizacion
@@ -11,7 +13,7 @@ const app = express();
 require('./database/dbMongo');
 require('./database/dbRedis');
 require('./database/dbCassandra');
-
+require('./config/passport');
 //Settings
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
@@ -35,11 +37,13 @@ app.set('view engine', '.hbs');
 app.set( path.join(__dirname, '/public'));
 app.use(express.urlencoded({extend: false}));
 app.use(mo('_method'));
-app.use(expressSession({
-    secret:'mysecretapp',
-    resave:true,
-    saveUninitialized:true
+app.use(session({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
 }));
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(flash());
 app.use(morgan('dev'));
 //Global Variables

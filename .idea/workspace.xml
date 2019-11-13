@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/public/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/users/film.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/passport.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/dbCassandra.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/dbCassandra.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/movie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/layouts/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/layouts/main.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/navigation.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/navigation.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/users/signin.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/users/signin.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,15 +46,15 @@
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/CesarDuvanCabraCoy/Red-Social-backend.git" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public" />
-      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
-      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public" />
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -95,7 +98,8 @@
       <workItem from="1573046752921" duration="2486000" />
       <workItem from="1573150313440" duration="3537000" />
       <workItem from="1573425947580" duration="11612000" />
-      <workItem from="1573519054349" duration="6867000" />
+      <workItem from="1573519054349" duration="7230000" />
+      <workItem from="1573601360940" duration="4747000" />
     </task>
     <task id="LOCAL-00001" summary="I like sme oenis">
       <created>1572446469562</created>
@@ -188,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573524435003</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Configuracion de vista">
+      <created>1573530120036</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1573530120036</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +230,7 @@
     <MESSAGE value="Creacion y almacenamiento de usuarios" />
     <MESSAGE value="Configuracion de conexion Cassandra" />
     <MESSAGE value="Configuracion de conexion Cassandra 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuracion de conexion Cassandra 2" />
+    <MESSAGE value="Configuracion de vista" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuracion de vista" />
   </component>
 </project>

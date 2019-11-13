@@ -2,11 +2,17 @@ const router = require('express').Router();
 const passport = require('passport');
 
 const User = require('../models/User');
+const UserCass = require('../database/dbCassandra');
 
 router.get('/users/signin', (req, res) => {
     res.render('users/signin');
 });
 
+router.post('/users/signin', passport.authenticate('local', {
+    successRedirect: '/movies',
+    failureRedirect: '/users/signin',
+    failureFlash: true
+}));
 
 router.get('/users/signup', (req, res) => {
     res.render('users/signup');
@@ -40,4 +46,9 @@ router.post('/users/signup', async (req, res) => {
     }
 });
 
+router.get('/users/logout', (req, res) => {
+    //req.logout();
+    req.flash('success_msg', 'You are logged out now.');
+    res.redirect('/users/signin');
+});
 module.exports = router;
