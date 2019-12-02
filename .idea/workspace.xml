@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="" />
+    <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/database/dbNeo4j.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/animal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/comments/newComment.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/movies/editMovie.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/movie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/layouts/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/layouts/main.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/movies/allMovies.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/movies/allMovies.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/movies/newMovie.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/movies/newMovie.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/navigation.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/navigation.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/users/signin.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/users/signin.hbs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,23 +46,24 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/CesarDuvanCabraCoy/Red-Social-backend.git" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views" />
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public" />
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public" />
-      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
-      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -90,7 +109,21 @@
       <workItem from="1573425947580" duration="11612000" />
       <workItem from="1573519054349" duration="7230000" />
       <workItem from="1573601360940" duration="13833000" />
-      <workItem from="1573651293662" duration="1470000" />
+      <workItem from="1573651293662" duration="5265000" />
+      <workItem from="1573863918800" duration="7000" />
+      <workItem from="1573867981659" duration="83000" />
+      <workItem from="1573929603583" duration="584000" />
+      <workItem from="1574024557369" duration="22091000" />
+      <workItem from="1574084122120" duration="4585000" />
+      <workItem from="1574181324487" duration="757000" />
+      <workItem from="1574183342380" duration="10970000" />
+      <workItem from="1574273133925" duration="585000" />
+      <workItem from="1574387946465" duration="587000" />
+      <workItem from="1574523738984" duration="3125000" />
+      <workItem from="1574646888178" duration="8015000" />
+      <workItem from="1574734073008" duration="589000" />
+      <workItem from="1575171116213" duration="598000" />
+      <workItem from="1575253473120" duration="10632000" />
     </task>
     <task id="LOCAL-00001" summary="I like sme oenis">
       <created>1572446469562</created>
@@ -204,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573652471116</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Configuracion de logica con cassandra">
+      <created>1573652812494</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573652812494</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -7,87 +7,125 @@ const Movie = require('../models/Movie');
 
 // Helpers
 const {isAuthenticated} = require('../helpers/auth');
+const multer = require('multer');
+const fs = require('fs');
+const path = require('path');
 
-// New Movie
+const storage = multer.diskStorage({
+    destination: path.join(__dirname, '../public/uploads'),
+    filename: (req, file, cb) => {
+        cb(null, file.originalname);
+    }
+});
+const uploadImage = multer({
+    storage,
+    limits: {fileSize: 1000000}
+}).single('image');
+
+// Nueva pelicula
 router.get('/movies/add', isAuthenticated, (req, res) => {
     res.render('movies/newMovie');
 });
 
+//agregando en la db
 router.post('/movies/newMovie', isAuthenticated, async (req, res) => {
-    const {title, description} = req.body;
-    const errors = [];
-    if (!title) {
-        errors.push({text: 'Please Write a Title.'});
-    }
-    if (!description) {
-        errors.push({text: 'Please Write a Description'});
-    }
-    if (errors.length > 0) {
-        res.render('movies/newMovie', {
-            errors,
-            title,
-            description
-        });
-    } else {
-        const query = "INSERT INTO movies (id, id_persona, title, description, email) VALUES ('" + uuid() + "','" + req.user.id + "','" + title + "', '" + description + "','" + req.user.email + "');";
-        clientCass.execute(query, [], function (err, result) {
-            if (err) {
-                console.log('error' + err);
-            } else {
-                console.log('Se guardo correctamente! Cassandra');
-                req.flash('success_msg', 'Movie Added Successfully');
-                res.redirect('/movies/myMovie');
-            }
-        });
-    }
+    uploadImage(req, res, (err) => {
+        if (err) {
+            err.message = 'The file is so heavy for my service';
+            return res.send(err);
+        }
+        console.log(req.file);
+        const {title, description} = req.body;
+        const errors = [];
+        if (!title) {
+            errors.push({text: 'Please Write a Title.'});
+        }
+        if (!description) {
+            errors.push({text: 'Please Write a Description'});
+        }
+        if (errors.length > 0) {
+            res.render('movies/newMovie', {
+                errors,
+                title,
+                description
+            });
+        } else {
+            const query = "INSERT INTO movies (id, id_persona, title, description, email) VALUES ('" + uuid() + "','" + req.user.id + "','" + title + "', '" + description + "','" + req.user.email + "');";
+            clientCass.execute(query, [], function (err, result) {
+                if (err) {
+                    console.log('error' + err);
+                } else {
+                    req.flash('success_msg', 'Movie Added Successfully');
+                    res.redirect('/movies/myMovie');
+                }
+            });
+        }
+    });
 });
 
-// Get All Notes
+// Get All movies
 router.get('/movies', isAuthenticated, async (req, res) => {
     res.render('movies/allMovies');
 });
-
+//get all my movies
 router.get('/movies/myMovie', isAuthenticated, async (req, res) => {
     const query = "Select * from movies";
+    const movies = [];
     clientCass.execute(query, [], function (err, result) {
         if (err) {
             console.log('error: ' + err);
         } else {
-            console.log(result.rows);
-            const movies = result.rows;
-            movies.forEach(function (element) {
-                if (element.email) {
-                    console.log(element.email);
+            const mymovie = result.rows;
+            mymovie.forEach(function (element) {
+                if (element.id_persona == req.user.id) {
+                    movies.push(element);
                 }
             });
-
-            // res.render('movies/allMovies', {movies});
+            res.render('movies/allMovies', {movies});
         }
     });
-    res.render('movies/allMovies');
 });
-// Edit Notes
+// Edit movie
 router.get('/movies/edit/:id', isAuthenticated, async (req, res) => {
-    const movie = await Movie.findById(req.params.id);
-    if (movie.user != req.user.id) {
-        req.flash('error_msg', 'Not Authorized');
-        return res.redirect('/notes');
-    }
-    res.render('movies/edit-note', {movie});
+    const query = "select * from movies where id ='" + req.params.id + "'";
+    clientCass.execute(query, [], function (err, result) {
+        if (err) {
+            console.log('error: ' + err);
+        } else {
+            const movie = result.rows[0];
+            res.render('movies/editMovie', {movie});
+            if (movie.id_persona != req.user.id) {
+                req.flash('error_msg', 'Not Authorized');
+                return res.redirect('/movies/myMovie');
+            }
+        }
+    });
 });
-
-router.put('/movies/edit-note/:id', isAuthenticated, async (req, res) => {
+//actualiza en db
+router.put('/movies/editMovie/:id', isAuthenticated, async (req, res) => {
     const {title, description} = req.body;
-    await Movie.findByIdAndUpdate(req.params.id, {title, description});
-    req.flash('success_msg', 'Movie Updated Successfully');
-    res.redirect('/notes');
+    const query = " UPDATE movies SET title = '" + title + "', description = '" + description + "' WHERE  id='" + req.params.id + "'";
+    clientCass.execute(query, [], function (err, result) {
+        if (err) {
+            console.log('error: ' + err);
+        } else {
+            req.flash('success_msg', 'Movie Updated Successfully');
+            res.redirect('/movies/myMovie');
+        }
+    });
 });
 
-// Delete Notes
-router.delete('/movie/delete/:id', isAuthenticated, async (req, res) => {
-    await Movie.findByIdAndDelete(req.params.id);
-    req.flash('success_msg', 'Movie Deleted Successfully');
-    res.redirect('/notes');
+// Delete movie
+router.delete('/movies/delete/:id', isAuthenticated, async (req, res) => {
+    const query = "delete from movies where id='" + req.params.id + "'";
+    clientCass.execute(query, [], function (err, result) {
+        if (err) {
+            console.log('error: ' + err);
+        } else {
+            req.flash('success_msg', 'Movie Deleted Successfully');
+            res.redirect('/movies/myMovie');
+        }
+    });
 });
 
 module.exports = router;

@@ -1,4 +1,29 @@
-<div class="jumbotron mt-4">
-    <h1 class="display-4">Contenido</h1>
-
+<div class="container">
+    {{#each movies}}
+        <div class="jumbotron mb-8">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="/img/animal.jpg" width="320" height="300">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ title }}</h2>
+                        <h5 class="card-title"><span class="glyphicon glyphicon-user "
+                                                     style="font-size:22px;">  {{ email }}</span></h5>
+                        <p class="card-text"><span class="glyphicon glyphicon-film"
+                                                   style="font-size:22px;">  {{ description }}</span></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-dark" align="center">
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago
+                        </small></p>
+                        <a href="#" class="card-link">Me gusta</a>
+                        <a href="/comments/movie/{{id}}" class="card-link">Comentarios</a>
+                        <a href="#" class="card-link">Compartir</a>
+                        <a href="#" class="card-link"><span class="glyphicon glyphicon-option-vertical"
+                                                            style="font-size:18px;"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
 </div>

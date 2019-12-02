@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="jumbotron mb-8">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">{{ movie.title }}</h2>
+                    <h5 class="card-title"><span class="glyphicon glyphicon-user "
+                                                 style="font-size:22px;">  {{ movie.email }}</span></h5>
+                    <p class="card-text"><span class="glyphicon glyphicon-film"
+                                               style="font-size:22px;">  {{ movie.description }}</span></p>
+                </div>
+                <div class="card-footer bg-transparent border-dark" align="center">
+                    <form action="/comments/save/{{movie.title}}?_method=post" method="POST">
+                        <div class="form-group">
+                            <textarea name="comentario" class="form-control" placeholder="Comentario"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block " type="submit">
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                {{#each lista}}
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title d-flex justify-content-between align-items-center">
+                                {{ comentario }}
+                            </h4>
+                            <h4 class="card-text d-flex justify-content-between align-items-center">
+                                {{ author }}
+                            </h4>
+                        </div>
+                        <div class="card-footer bg-transparent border-gray" align="center">
+                            <a href="#" class="card-link">Me gusta</a>
+                            <a href="/comments/movie/{{id}}" class="card-link">Comentarios</a>
+                            <a href="#" class="card-link"><span class="glyphicon glyphicon-option-vertical" style="font-size:14px;"></span></a>
+                        </div>
+                    </div>
+                {{else}}
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h1>Empty {{user.name}}</h1>
+                            <p clsss="lead">No tienes registros.</p>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
