@@ -3,6 +3,13 @@
         <div class="jumbotron mb-8">
             <div class="row no-gutters">
                 <div class="col-md-4">
+                    {{#each images}}
+                        {{#if this.noise}}
+                            "{{this.noise}}".
+                        {{else}}
+                            nothing since its a {{this.name}}.
+                        {{/if}}
+                    {{/each}}
                     <img src="/img/animal.jpg" width="320" height="300">
                 </div>
                 <div class="col-md-8">

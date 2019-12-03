@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/database/dbNeo4j.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/animal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/comments/newComment.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/movies/editMovie.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/movie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/layouts/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/layouts/main.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/movies/allMovies.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/movies/allMovies.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/movies/newMovie.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/movies/newMovie.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/partials/navigation.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/navigation.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/users/signin.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/users/signin.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +109,8 @@
       <workItem from="1574646888178" duration="8015000" />
       <workItem from="1574734073008" duration="589000" />
       <workItem from="1575171116213" duration="598000" />
-      <workItem from="1575253473120" duration="10632000" />
+      <workItem from="1575253473120" duration="13018000" />
+      <workItem from="1575385946851" duration="2182000" />
     </task>
     <task id="LOCAL-00001" summary="I like sme oenis">
       <created>1572446469562</created>
@@ -244,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573652812494</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Ajustes de interfaz y nuevas funciones">
+      <created>1575264316755</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1575264316755</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +271,7 @@
     <MESSAGE value="Configuracion de conexion Cassandra 2" />
     <MESSAGE value="Configuracion de vista" />
     <MESSAGE value="Configuracion de logica con cassandra" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuracion de logica con cassandra" />
+    <MESSAGE value="Ajustes de interfaz y nuevas funciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustes de interfaz y nuevas funciones" />
   </component>
 </project>

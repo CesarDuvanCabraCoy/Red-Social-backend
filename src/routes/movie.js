@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 let clientCass = require('../database/dbCassandra');
+let session = require("../database/dbNeo4j");
 const uuid = require('uuid');
 // Models
 const Movie = require('../models/Movie');
@@ -14,7 +15,8 @@ const path = require('path');
 const storage = multer.diskStorage({
     destination: path.join(__dirname, '../public/uploads'),
     filename: (req, file, cb) => {
-        cb(null, file.originalname);
+        let exten = file.originalname.split('.');
+        cb(null, uuid() + '.' + exten[exten.length - 1]);
     }
 });
 const uploadImage = multer({
@@ -34,8 +36,11 @@ router.post('/movies/newMovie', isAuthenticated, async (req, res) => {
             err.message = 'The file is so heavy for my service';
             return res.send(err);
         }
-        console.log(req.file);
+        let ruta = req.file.filename;
         const {title, description} = req.body;
+        session.run('create (n:Movie {titulo:"' + title + '", imagen:"' + ruta + '"}) return n').then(function (result) {
+            //console.log(result);
+        }).catch();
         const errors = [];
         if (!title) {
             errors.push({text: 'Please Write a Title.'});
