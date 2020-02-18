@@ -11,7 +11,7 @@ const {isAuthenticated} = require('../helpers/auth');
 const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
-
+//Manejos de imagenes con Multer
 const storage = multer.diskStorage({
     destination: path.join(__dirname, '../public/uploads'),
     filename: (req, file, cb) => {
@@ -21,7 +21,7 @@ const storage = multer.diskStorage({
 });
 const uploadImage = multer({
     storage,
-    limits: {fileSize: 1000000}
+    limits: {fileSize: 100000}
 }).single('image');
 
 // Nueva pelicula
@@ -33,7 +33,7 @@ router.get('/movies/add', isAuthenticated, (req, res) => {
 router.post('/movies/newMovie', isAuthenticated, async (req, res) => {
     uploadImage(req, res, (err) => {
         if (err) {
-            err.message = 'The file is so heavy for my service';
+            err.message = 'El archivo es muy pesado para mi servicio';
             return res.send(err);
         }
         let ruta = req.file.filename;

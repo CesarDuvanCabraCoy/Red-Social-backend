@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/movie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/users/film.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,16 +43,16 @@
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/CesarDuvanCabraCoy/Red-Social-backend.git" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
-      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
-      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -110,7 +113,11 @@
       <workItem from="1574734073008" duration="589000" />
       <workItem from="1575171116213" duration="598000" />
       <workItem from="1575253473120" duration="13018000" />
-      <workItem from="1575385946851" duration="2182000" />
+      <workItem from="1575385946851" duration="4854000" />
+      <workItem from="1580131286961" duration="4607000" />
+      <workItem from="1580303343103" duration="4537000" />
+      <workItem from="1580735904977" duration="1135000" />
+      <workItem from="1582055325893" duration="2259000" />
     </task>
     <task id="LOCAL-00001" summary="I like sme oenis">
       <created>1572446469562</created>
@@ -238,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575264316755</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Ajustes de interfaz y nuevas funciones">
+      <created>1575388172333</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1575388172333</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
