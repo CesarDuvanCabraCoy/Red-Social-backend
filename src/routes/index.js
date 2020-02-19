@@ -14,7 +14,6 @@ router.get('/', function (req, res) {
             session.run('match (n) return n').then(function (result) {
                 result.records.forEach(function (record) {
                     if (record._fields[0].properties.titulo != undefined) {
-
                         movies.forEach(function (element) {
                             if (record._fields[0].properties.titulo === element.title) {
                                 movies2.push({
@@ -29,10 +28,10 @@ router.get('/', function (req, res) {
                         });
                     }
                 });
-                //console.log(movies)
-                //console.log(movies2)
+                movies = movies2;
+                res.render('index.hbs', {movies});
+                console.log(movies);
             }).catch();
-            res.render('index.hbs', {movies});
         }
     });
 });

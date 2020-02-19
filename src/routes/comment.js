@@ -48,17 +48,6 @@ router.post('/comments/save/:id', async (req, res) => {
             }
         });
         clientRedis.sadd('' + title, '' + comentario);
-        /*
-        let lista = [];
-        clientRedis.smembers('' + title, function (err, object) {
-            object.forEach(function (element) {
-                lista.push({'comentario': '' + element});
-            });
-        });
-
-       // clientRedis.sadd('' + title + ':' + lista.length + ':author', author);
-
-         */
         res.redirect('/');
     } else {
         res.redirect('/');

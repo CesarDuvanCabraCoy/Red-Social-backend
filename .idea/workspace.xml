@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="">
+    <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="Ajustes de interfaz y nuevas funciones">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/img/film.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/comment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/movie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/animal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/comments/newComment.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/comments/newComment.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/users/film.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/movies/newMovie.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/movies/newMovie.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +37,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -43,16 +45,17 @@
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/CesarDuvanCabraCoy/Red-Social-backend.git" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
-      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
-      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
       <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views\users" />
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\public\img" />
+      <recent name="C:\Users\Lenovo\Escritorio\Node-ProyectoElectiva\src\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -117,7 +120,7 @@
       <workItem from="1580131286961" duration="4607000" />
       <workItem from="1580303343103" duration="4537000" />
       <workItem from="1580735904977" duration="1135000" />
-      <workItem from="1582055325893" duration="2259000" />
+      <workItem from="1582055325893" duration="6578000" />
     </task>
     <task id="LOCAL-00001" summary="I like sme oenis">
       <created>1572446469562</created>
@@ -252,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575388172333</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Ajustes de interfaz y nuevas funciones">
+      <created>1582066954008</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1582066954008</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
