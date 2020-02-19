@@ -30,7 +30,6 @@ router.get('/', function (req, res) {
                 });
                 movies = movies2;
                 res.render('index.hbs', {movies});
-                console.log(movies);
             }).catch();
         }
     });

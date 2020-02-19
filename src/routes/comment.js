@@ -1,6 +1,7 @@
 const router = require('express').Router();
 let clientCass = require('../database/dbCassandra');
 let clientRedis = require('../database/dbRedis');
+let session = require("../database/dbNeo4j");
 const uuid = require('uuid');
 // Models
 const Movie = require('../models/Movie');
@@ -10,18 +11,37 @@ const {isAuthenticated} = require('../helpers/auth');
 
 router.get('/comments/movie/:id', function (req, res) {
     const query = "select * from movies where id ='" + req.params.id + "'";
+    let titulo;
     clientCass.execute(query, [], function (err, result) {
         if (err) {
             console.log('error: ' + err);
         } else {
-            const movie = result.rows[0];
+            let movie = result.rows[0];
             let lista = [];
-            clientRedis.smembers('' + movie.title, function (err, object) {
+            titulo = movie.title;
+            clientRedis.smembers('' + titulo, function (err, object) {
                 object.forEach(function (element) {
                     lista.push({'comentario': '' + element});
                 });
-                res.render('comments/newComment.hbs', {movie, lista});
+                let movies2;
+                session.run('match (n) return n').then(function (result) {
+                    result.records.forEach(function (record) {
+                        if (record._fields[0].properties.titulo === movie.title) {
+                            movies2 = {
+                                title: movie.title,
+                                email: movie.email,
+                                id_persona: movie.id_persona,
+                                description: movie.description,
+                                id: movie.id,
+                                imagen: record._fields[0].properties.imagen
+                            };
+                        }
+                    });
+                    movie = movies2;
+                    res.render('comments/newComment.hbs', {movie, lista});
+                }).catch();
             });
+
         }
     });
 });
