@@ -1,17 +1,21 @@
 <div class="container">
     <div class="jumbotron mb-8">
         <div class="row no-gutters">
-            <div class="col-md-4">
 
-            </div>
             <div class="col-md-8">
-                <div class="card-body">
+
+                <center>
+                    <img src="/uploads/{{ movie.imagen }}" width="520" height="300">
+
+                    <div class="card-body">
+
                     <h2 class="card-title">{{ movie.title }}</h2>
                     <h5 class="card-title"><span class="glyphicon glyphicon-user "
                                                  style="font-size:22px;">  {{ movie.email }}</span></h5>
                     <p class="card-text"><span class="glyphicon glyphicon-film"
                                                style="font-size:22px;">  {{ movie.description }}</span></p>
-                </div>
+                    </div>
+                </center>
                 <div class="card-footer bg-transparent border-dark" align="center">
                     <form action="/comments/save/{{movie.title}}?_method=post" method="POST">
                         <div class="form-group">
@@ -43,8 +47,8 @@
                 {{else}}
                     <div class="card mb-3">
                         <div class="card-body">
-                            <h1>Empty {{user.name}}</h1>
-                            <p clsss="lead">No tienes registros.</p>
+                            <h5>Enviar comentario nuevo {{movie.email}}</h5>
+                            <p clsss="lead">No existen registros.</p>
                         </div>
                     </div>
                 {{/each}}

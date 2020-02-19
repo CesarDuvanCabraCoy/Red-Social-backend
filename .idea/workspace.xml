@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2ac0f587-0b4d-46ee-bea0-45176cd34bed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/comments/newComment.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/comments/newComment.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -116,7 +114,7 @@
       <workItem from="1580131286961" duration="4607000" />
       <workItem from="1580303343103" duration="4537000" />
       <workItem from="1580735904977" duration="1135000" />
-      <workItem from="1582055325893" duration="9213000" />
+      <workItem from="1582055325893" duration="10959000" />
     </task>
     <task id="LOCAL-00001" summary="I like sme oenis">
       <created>1572446469562</created>
@@ -265,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582071244331</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Ajustes de funciones">
+      <created>1582073988352</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1582073988352</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +304,7 @@
     <MESSAGE value="Configuracion de vista" />
     <MESSAGE value="Configuracion de logica con cassandra" />
     <MESSAGE value="Ajustes de interfaz y nuevas funciones" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajustes de interfaz y nuevas funciones" />
+    <MESSAGE value="Ajustes de funciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustes de funciones" />
   </component>
 </project>
